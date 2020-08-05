@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+:root {
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Alice', serif;
+}
+header{
+    background: url(../imgs/Rectangle\ 4.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 640px;
+}
+#typed {
+    display: inline;
+}
+.navbar .navbar-collapse {
+    text-align: center;
+}
+.navbar-brand span{
+    font-size: 32px;
+    font-weight: bolder;
+}
+.navbar-brand:hover{
+    transform: scale(3.001);
+    -webkit-transform: scale(1.2);
+    transition-duration: 1s;
+}
+.nav-link:hover{
+    transform: scale(3.001);
+    -webkit-transform: scale(1.2);
+    transition-duration: 1s;
+}
+.bg-transparent{
+    background: transparent !important;
+}
+.bg-transparent.scrolled{
+    background: #62BBC1 !important;
+    color: white !important;
+}
+.wrapper{
+    color: #62BBC1;
+}
+.warp-1{
+    background: #62BBC1 !important;
+    color: white;
+    border: 2px solid #62BBC1;
+    width: 190px;
+}
+.warp-1:hover{
+    background: #FFFBFC !important;
+    border: 2px solid #62BBC1;
+    color: #62BBC1;
+    transition-duration: 0.8s;
+}
+.warp-2{
+    background: #FFFBFC;
+    border: 2px solid #62BBC1;
+    color: #62BBC1;
+    width: 190px;
+}
+.warp-2:hover{
+    background: #62BBC1 !important;
+    border: 2px solid #62BBC1;
+    color: #fff;
+    transition-duration: 0.8s;
+}
+.show-img{
+    width: 533px !important;
+    height: 410px !important;
+}
+.Intro-Name{
+    font-size: 56px !important;
+}
+.Intro-Stack{
+    font-size: 32px !important;
+}
+.line{
+    border-left: 2px solid #FFFBFC;
+    height: 30px;
+    justify-content: center;
+}
+.heading-1{
+    position:relative;
+    text-align: center;
+    color: #62BBC1;
+}
+.heading-1:before {
+    content: "";
+    display: block;
+    border-top: 1px solid #62BBC1;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    z-index: 0;
+}
+.heading-1 span {
+    background: #fff;
+    padding: 0 10px;
+    position: relative;
+    z-index: 1;
+}
+.card{
+    background-color: #62BBC1 !important;
+    border-radius: 0 !important;
+}
+.card h5{
+    font-size: 16px !important;
+    color: white;
+}
+form input[type="text"], input[type="email"]{
+    border: 0 !important;
+    border-bottom: 2px solid #FFFBFC !important;
+    outline: 0 !important;
+    background-color:#62BBC1 ;
+}
+input[value="Name"],input[value="Email Address"],input[value="Message"]{
+    color: white !important;
+}
+#sendMessage{
+    background: #FFFBFC;
+    border: 2px solid #62BBC1;
+    color: #62BBC1;
+}
+
+@media screen and (max-width: 768px){
+    .Intro-Name{
+        color:white !important;
+    }
+    .Intro-Stack{
+        color: white !important;
+    }
+    .intro-img{
+        display: none;
+    }
+    .warp-1{
+        border: 2px solid white !important;
+    }
+    .fixed-top{
+        display: none;
+    }
+    .card h5{
+        font-size: smaller !important;
+    }
+    input[value="Name"],input[value="Email Address"],input[value="Message"]{
+        font-size: x-small;
+    }
+    #sendMessage{
+        font-size: x-small !important;
+    }
+}
