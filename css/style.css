@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+
 :root {
     --animate-duration: 800ms;
     --animate-delay: 0.9s;
@@ -8,16 +11,22 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Alice', serif;
+    font-family: 'Raleway', sans-serif;
 }
 header{
     background: url(../imgs/Rectangle\ 4.png);
     background-position: right;
     background-repeat: no-repeat;
+    background-size: contain;
     height: 640px;
 }
-#typed {
+#typed{
     display: inline;
+    font-family: 'Alice', sans-serif !important;
+}
+nav{
+    font-family: 'Raleway', sans-serif !important;
+    font-size: 18px;
 }
 .navbar .navbar-collapse {
     text-align: center;
@@ -40,33 +49,35 @@ header{
     background: transparent !important;
 }
 .bg-transparent.scrolled{
-    background: #62BBC1 !important;
+    background: #045C85 !important;
     color: white !important;
+    height: 50px;
+    font-size: 16px;
 }
 .wrapper{
-    color: #62BBC1;
+    color: #045C85;
 }
 .warp-1{
-    background: #62BBC1 !important;
+    background: #045C85 !important;
     color: white;
-    border: 2px solid #62BBC1;
+    border: 2px solid #045C85;
     width: 190px;
 }
 .warp-1:hover{
     background: #FFFBFC !important;
-    border: 2px solid #62BBC1;
-    color: #62BBC1;
+    border: 2px solid #045C85;
+    color: #045C85;
     transition-duration: 0.8s;
 }
 .warp-2{
     background: #FFFBFC;
-    border: 2px solid #62BBC1;
-    color: #62BBC1;
+    border: 2px solid #045C85;
+    color: #045C85;
     width: 190px;
 }
 .warp-2:hover{
-    background: #62BBC1 !important;
-    border: 2px solid #62BBC1;
+    background: #045C85 !important;
+    border: 2px solid #045C85;
     color: #fff;
     transition-duration: 0.8s;
 }
@@ -76,9 +87,11 @@ header{
 }
 .Intro-Name{
     font-size: 56px !important;
+    font-family: 'Alice', sans-serif !important;
 }
 .Intro-Stack{
     font-size: 32px !important;
+    font-family: 'Alice', sans-serif !important;
 }
 .line{
     border-left: 2px solid #FFFBFC;
@@ -88,27 +101,31 @@ header{
 .heading-1{
     position:relative;
     text-align: center;
-    color: #62BBC1;
+    color: #045C85;
+    font-family: 'Alice', sans-serif !important;
 }
 .heading-1:before {
     content: "";
     display: block;
-    border-top: 1px solid #62BBC1;
+    border-top: 1px solid #045C85;
     width: 100%;
     height: 2px;
     position: absolute;
     top: 50%;
     z-index: 0;
+    font-family: 'Alice', sans-serif !important;
 }
 .heading-1 span {
     background: #fff;
     padding: 0 10px;
     position: relative;
     z-index: 1;
+    font-family: 'Alice', sans-serif !important;
 }
 .card{
-    background-color: #62BBC1 !important;
+    background-color: #045C85 !important;
     border-radius: 0 !important;
+    font-family: 'Raleway', sans-serif !important;
 }
 .card h5{
     font-size: 16px !important;
@@ -118,7 +135,7 @@ form input[type="text"], input[type="email"]{
     border: 0 !important;
     border-bottom: 2px solid #FFFBFC !important;
     outline: 0 !important;
-    background-color:#62BBC1 ;
+    background-color:#045C85;
 }
 input[value="Name"],input[value="Email Address"],input[value="Message"]{
     color: white !important;
@@ -126,7 +143,29 @@ input[value="Name"],input[value="Email Address"],input[value="Message"]{
 #sendMessage{
     background: #FFFBFC;
     border: 2px solid #62BBC1;
-    color: #62BBC1;
+    color: #045C85;
+}
+#sendMessage:hover{
+    background: #045C85;
+    color: white;
+    transition: 1s;
+}
+footer h3{
+    font-size: 16px !important;
+    font-family: 'Raleway', sans-serif !important;
+}
+footer a{
+    font-family: 'Raleway', sans-serif !important;
+}
+footer{
+    background-color: #045C85 !important;
+    font-family: 'Raleway', sans-serif !important;
+}
+footer .designer{
+    font-size: 18px !important;
+    font-weight: 300 !important;
+    color: #FFFFFF;
+    font-family: 'Raleway', sans-serif !important;
 }
 
 @media screen and (max-width: 768px){
